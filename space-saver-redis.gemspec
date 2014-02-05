@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Aaron Windsor"]
-  s.date = "2012-12-18"
+  s.date = "2014-02-05"
   s.description = "A pure Ruby implementation of the SpaceSaver algorithm for approximating the top K elements in a data stream, backed by Redis"
   s.email = "aaron.windsor@gmail.com"
   s.extra_rdoc_files = [
@@ -26,13 +26,14 @@ Gem::Specification.new do |s|
     "Rakefile",
     "VERSION",
     "lib/space-saver-redis.rb",
+    "space-saver-redis.gemspec",
     "spec/space-saver-redis_spec.rb",
     "spec/spec_helper.rb"
   ]
   s.homepage = "http://github.com/aaw/space-saver-redis"
   s.licenses = ["MIT"]
   s.require_paths = ["lib"]
-  s.rubygems_version = "1.8.10"
+  s.rubygems_version = "1.8.24"
   s.summary = "A pure Ruby implementation of the SpaceSaver algorithm for approximating the top K elements in a data stream, backed by Redis"
 
   if s.respond_to? :specification_version then
