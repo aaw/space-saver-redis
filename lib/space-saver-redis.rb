@@ -19,4 +19,8 @@ class SpaceSaver
   def leaders(leaderboard, k=@k)
     @redis.zrevrange(leaderboard, 0, k-1, withscores: true)
   end
+
+  def reset(leaderboard)
+    @redis.del(leaderboard)
+  end
 end
