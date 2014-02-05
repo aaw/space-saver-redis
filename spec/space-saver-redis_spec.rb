@@ -42,5 +42,10 @@ describe SpaceSaver do
     expected_leaders = ['foo','bar','baz']
     s.leaders("leaderboard").map{ |x| x.first }.should include('foo','bar','baz')
   end
-  
+  it "can reset leaderboard" do
+    s = SpaceSaver.new(Redis.new, 3)
+    s.increment("leaderboard", "item")
+    s.reset("leaderboard")
+    s.leaders("leaderboard").size.should == 0
+  end
 end
