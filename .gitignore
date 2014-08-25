@@ -18,5 +18,5 @@ pkg/*
 *.sublime-project
 *.sublime-workspace
 rspec.failures
-
+Gemfile.lock
 
