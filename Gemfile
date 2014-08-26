@@ -1,6 +1,6 @@
 source "http://rubygems.org"
 
-gem 'redis', '~> 3.0.1'
+gem 'redis', '~> 3.0', '>= 3.0.1'
 
 group :development, :test do
   gem 'jeweler', '~> 1.8.4'
