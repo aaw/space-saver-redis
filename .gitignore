@@ -5,6 +5,7 @@
 .yardoc/*
 .pt
 .rvmrc
+.ruby-version
 .redcar
 .powrc
 .irbrc
@@ -19,4 +20,3 @@ pkg/*
 *.sublime-workspace
 rspec.failures
 Gemfile.lock
-
